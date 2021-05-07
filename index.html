@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vanilla-DataTables Basic Demo</title>
+
+<link href="Vanilla-DataTables-master/src/vanilla-dataTables.css" rel="stylesheet" type="text/css">
+<style>
+.good{background-color: red;}</style>
+</head>
+
+<body>
+<div id="css-script-menu">
+
+    <div class="css-script-clear"><div style="border:1px dotted blue;display:inline-block;width:25vw"><div style="width:100%;display:inline-block; border-bottom:1px solid blue"><b >DEV DIV</b><span style="padding-left:20%;display:inline-block;" onclick="document.getElementById('main_sis').innerHTML=''">X Trinti</span></div><div id="main_sis"></div></div>
+  <textarea id="json" name="atsakas"></textarea></div>
+  </div>
+</div>
+<h1 style="margin:150px auto 30px auto;">Vanilla-DataTables Basic Demo</h1>
+
+<table class="table dataTable-table" id="basic">
+
+</table>
+<script src="js/jsonTable.js"></script>
+<script src="Vanilla-DataTables-master/src/vanilla-dataTables2.js"></script>
+
+<script>
+//paeidimas netaip
+  jsonTable.set({id:'basic',file:"data1.json"});
+
+
+</script>
+
+</body>
+</html>
